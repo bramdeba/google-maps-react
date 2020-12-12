@@ -37,7 +37,7 @@ export class Marker extends React.Component {
     if (this.props.map !== prevProps.map) {
       this.marker.setMap(this.props.map);
     }
-    if (this.props.icon !== prevProps.icon) {
+    if (this.props.icon.url !== prevProps.icon.url) {
       this.marker.setIcon(this.props.icon);
     }
   }
